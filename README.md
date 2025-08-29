@@ -13,24 +13,7 @@ extensions:
   createdDate: 4/4/2017 9:41:27 AM
 noDependencies: true
 ---
-# IMPORTANT
 
-Last year we announced a new Microsoft Intune GitHub repository [here](https://aka.ms/Intune/Scripts-blog) based on the Microsoft Graph SDK-based PowerShell module. This legacy Microsoft Intune PowerShell sample scripts GitHub repository is now read-only. Additionally, starting on April 1, 2024, due to updated authentication methods in the Graph SDK-based PowerShell module, the global Microsoft Intune PowerShell application (client) ID based authentication method is being removed.
-
-### How this will affect your organization
-
-If you are using the Intune PowerShell application ID (d1ddf0e4-d672-4dae-b554-9d5bdfd93547), you will need to update your scripts with a Microsoft Entra ID registered application ID to prevent your scripts from breaking.
-
-### What you need to do to prepare
-
-Before May 6, 2024, update your PowerShell scripts by: 
-
-1) Creating a new app registration in the Microsoft Entra admin center. For detailed instructions, read: [Quickstart: Register an application with the Microsoft identity platform](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app).
-2) Update scripts containing the Intune application ID (d1ddf0e4-d672-4dae-b554-9d5bdfd93547) with the new application ID created in step 1.
-
-Review the "Updating App Registration" file for detailed instructions. (https://github.com/microsoftgraph/powershell-intune-samples/blob/master/Updating%20App%20Registration)
-
-# Intune Graph Samples
 
 This repository of PowerShell sample scripts show how to access Intune service resources.  They demonstrate this by making HTTPS RESTful API requests to the Microsoft Graph API from PowerShell.
 
@@ -126,26 +109,3 @@ Microsoft Intune PowerShell needs permission to:
 
 Note: If your user account is targeted for device based conditional access your device must be enrolled or compliant to pass authentication.
 
-## Contributing
-
-If you'd like to contribute to this sample, see CONTRIBUTING.MD.
-
-This project has adopted the Microsoft Open Source Code of Conduct. For more information see the Code of Conduct FAQ or contact opencode@microsoft.com with any additional questions or comments.
-
-## Questions and comments
-
-We'd love to get your feedback about the Intune PowerShell sample. You can send your questions and suggestions to us in the Issues section of this repository.
-
-Your feedback is important to us. Connect with us on Stack Overflow. Tag your questions with [MicrosoftGraph] and [intune].
-
-
-## Additional resources
-* [Microsoft Graph API documentation](https://developer.microsoft.com/en-us/graph/docs)
-* [Microsoft Graph Portal](https://developer.microsoft.com/en-us/graph/graph-explorer)
-* [Microsoft code samples](https://developer.microsoft.com/en-us/graph/code-samples-and-sdks)
-* [Intune Graph Documentation](https://docs.microsoft.com/en-us/graph/api/resources/intune-graph-overview?view=graph-rest-1.0)
-
-## Copyright
-Copyright (c) 2017 Microsoft. All rights reserved.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
