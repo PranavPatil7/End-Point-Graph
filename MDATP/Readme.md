@@ -1,68 +1,13 @@
----
-page_type: sample
-products:
-- ms-graph
-languages:
-- powershell
-extensions:
-  contentType: samples
-  technologies:
-  - Microsoft Graph 
-  services:
-  - Intune
-  createdDate: 4/4/2017 9:41:27 AM
-noDependencies: true
----
-# IMPORTANT
+# Microsoft Defender ATP Scripts
 
-Last year we announced a new Microsoft Intune GitHub repository [here](https://aka.ms/Intune/Scripts-blog) based on the Microsoft Graph SDK-based PowerShell module. This legacy Microsoft Intune PowerShell sample scripts GitHub repository is now read-only. Additionally, starting on April 1, 2024, due to updated authentication methods in the Graph SDK-based PowerShell module, the global Microsoft Intune PowerShell application (client) ID based authentication method is being removed.
+This repository of PowerShell sample scripts can assist in configuring a Microsoft Defender ATP environment. 
 
-### How this will affect your organization
+The following scripts are included in this repository:
+- Configure-MDATPIntuneSecAdminRole.ps1
+- MacOS_MDATP_Deployment_Add.ps1
+- MacOS_MDATP_Deployment_Add_Assign.ps1
 
-If you are using the Intune PowerShell application ID (d1ddf0e4-d672-4dae-b554-9d5bdfd93547), you will need to update your scripts with a Microsoft Entra ID registered application ID to prevent your scripts from breaking.
-
-### What you need to do to prepare
-
-Before May 6, 2024, update your PowerShell scripts by: 
-
-1) Creating a new app registration in the Microsoft Entra admin center. For detailed instructions, read: [Quickstart: Register an application with the Microsoft identity platform](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app).
-2) Update scripts containing the Intune application ID (d1ddf0e4-d672-4dae-b554-9d5bdfd93547) with the new application ID created in step 1.
-
-Review the "Updating App Registration" file for detailed instructions. (https://github.com/microsoftgraph/powershell-intune-samples/blob/master/Updating%20App%20Registration)
-
-# Intune Graph Samples
-
-This repository of PowerShell sample scripts show how to access Intune service resources.  They demonstrate this by making HTTPS RESTful API requests to the Microsoft Graph API from PowerShell.
-
-Documentation for Intune and Microsoft Graph can be found here [Intune Graph Documentation](https://docs.microsoft.com/en-us/graph/api/resources/intune-graph-overview?view=graph-rest-1.0).
-
-These samples demonstrate typical Intune administrator or Microsoft partner actions for managing Intune resources.
-
-The following samples are included in this repository:
-- AdminConsent
-- AndroidEnterprise
-- AppleEnrollment
-- Applications
-- ApplicationSync
-- AppProtectionPolicy
-- Auditing
-- Authentication
-- CertificationAuthority
-- CheckStatus
-- CompanyPortalBranding
-- CompliancePolicy
-- CorporateDeviceEnrollment
-- DeviceConfiguration
-- EnrollmentRestrictions
-- IntuneDataExport
-- LOB_Application
-- ManagedDevices
-- Paging
-- RBAC
-- RemoteActionAudit
-- SoftwareUpdates
-- TermsAndConditions
-- UserPolicyReport
+For information about using the MDATP Deployment Scripts, please see [MacOS_MDATP_Deployment_Readme](https://github.com/microsoftgraph/powershell-intune-samples/raw/master/MDATP/MacOS_MDATP_Deployment_Readme.docx)
 
 The scripts are licensed "as-is." under the MIT License.
 
@@ -143,9 +88,9 @@ Your feedback is important to us. Connect with us on Stack Overflow. Tag your qu
 * [Microsoft Graph API documentation](https://developer.microsoft.com/en-us/graph/docs)
 * [Microsoft Graph Portal](https://developer.microsoft.com/en-us/graph/graph-explorer)
 * [Microsoft code samples](https://developer.microsoft.com/en-us/graph/code-samples-and-sdks)
-* [Intune Graph Documentation](https://docs.microsoft.com/en-us/graph/api/resources/intune-graph-overview?view=graph-rest-1.0)
+* [Intune Graph Documentation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview)
 
 ## Copyright
-Copyright (c) 2017 Microsoft. All rights reserved.
+Copyright (c) 2019 Microsoft. All rights reserved.
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
